@@ -1,0 +1,89 @@
+.card {
+  width: 326px;
+  height: 374px;
+  background-color: $white;
+  border-radius: 20px;
+
+  &__header {
+    &-image {
+      width: 326px;
+      height: 140px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-avatar-container {
+      position: relative;
+      margin-bottom: 45px;
+    }
+
+    &-avatar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 96px;
+      height: 96px;
+      margin-top: -48px;
+      margin-left: -48px;
+      border-radius: 50%;
+      color: $white;
+      border: 5px $white solid;
+    }
+
+    &-name {
+      margin-top: 24px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      color: $very-dark-desaturated-blue;
+    }
+
+    &-age {
+      margin-left: 8.5px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $dark-grayish-blue;
+    }
+
+    &-city {
+      color: $dark-grayish-blue;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 8px;
+    }
+
+    &-stats {
+      width: 100%;
+      margin-top: 25px;
+      padding-top: 24px;
+      border-top: 1px #e8e9ec solid;
+      display: flex;
+      justify-content: space-evenly;
+
+      &-value {
+        color: $very-dark-desaturated-blue;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+      }
+
+      &-category {
+        margin-top: 9px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 1.5px;
+        text-align: center;
+      }
+    }
+  }
+}
